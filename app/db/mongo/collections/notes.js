@@ -73,7 +73,7 @@ const getNotesForUid = async (id) => {
 
         const notes = [];
         await db.find({
-            uid: parseInt(id)
+            uid: id
         }).forEach((note)=>{
             notes.push(note);
         })
